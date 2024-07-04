@@ -1,3 +1,4 @@
+import Category from "./components/Category.jsx";
 import Header from "./components/Header.jsx"
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
     <>
       <p className='text-[150px]'></p>
       <Header/>
+      <Category/>
     </>
   )
 }

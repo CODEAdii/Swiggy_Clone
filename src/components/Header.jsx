@@ -25,15 +25,18 @@ const Header = () => {
         {
             icon:<CiSearch/>,
             name:"Search"
+           
         },{
             icon:<BiSolidOffer/>,
-            name:"Offers"
+            name:"Offers",
+            sup:"New"
         },{
             icon:"",
             name:"Help"
         },{
             icon:<BsCartPlus/>,
-            name:"Cart"
+            name:"Cart",
+            sup:"0"
         }
         ,{
             icon:<VscAccount/>,
@@ -73,13 +76,11 @@ const Header = () => {
                                  return <li key={index} className='flex items-center gap-2 cursor-pointer hover:text-[#fc8019]'>
                                     {link.icon}  
                                     {link.name}
-                                     
+                                    <sup>{link.sup}</sup>
                                 </li>
                             }
                         )
-                    }
-               
-            
+                    }            
                 </nav>
             </div> 
         </header>
