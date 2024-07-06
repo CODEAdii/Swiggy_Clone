@@ -26,8 +26,14 @@ const TopRest = () => {
           
         </div>
     </div>
-    <div className='flex'>
-        <Card/>
+    <div className='flex gap-5 overflow-hidden'>
+       {
+         data.map(
+            (d,i)=>{
+                return <Card {...d} key={i}/>
+            }
+         )
+       }
     </div>
     </div>
   );
