@@ -1,5 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import { FaArrowRight,FaArrowLeft } from "react-icons/fa6";
+import Card from './Card';
+
 
 
 const TopRest = () => {
@@ -25,7 +27,7 @@ const TopRest = () => {
         </div>
     </div>
     <div className='flex'>
-        
+        <Card/>
     </div>
     </div>
   );
