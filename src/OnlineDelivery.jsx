@@ -15,11 +15,11 @@ function OnlineDelivery() {
         fetchTopRestaurant();
     },[]);
   return (
-    <div className=' max-w-[1200px] mx-auto '>
+    <div className=' max-w-[1200px] mx-auto py-2 px-3'>
         <div className='flex my-3 items-center justify-between'>
-            <div className='text-[25px] font-bold'>Restaurants with online delivery in Kumarpara</div>        
+            <div className='text-[25px] font-bold'>Restaurants with Online Delivery in Kumarpara</div>        
         </div>
-        <div className='grid grid-cols-4 gap-4'>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-3'>
             {
                 data.map(
                     (d,i)=>{

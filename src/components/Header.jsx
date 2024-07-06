@@ -69,7 +69,7 @@ const Header = () => {
                 <div>
                     <span className='font-bold border-b-[3px] border-[#686b78] '> Kumarpara </span>Guwahati, Assam, India <RxCaretDown fontSize={25} className='inline text-[#fc8019] cursor-pointer' onClick={showSideMenu}/>
                 </div>
-                <nav className='flex list-none gap-10 ml-auto font-bold text-[18px]'>
+                <nav className='hidden md:flex list-none gap-10 ml-auto font-bold text-[18px]'>
                     {
                         links.map(
                             (link,index)=>{

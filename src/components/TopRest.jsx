@@ -1,6 +1,5 @@
 import React, { useState,useEffect } from 'react';
 import { FaArrowRight,FaArrowLeft } from "react-icons/fa6";
-import OnlineDelivery from '../OnlineDelivery';
 import Card from './Card';
 
 
@@ -16,8 +15,10 @@ const TopRest = () => {
     useEffect(()=>{
         fetchTopRestaurant();
     },[]);
+
+    
   return (
-    <div className=' max-w-[1200px] mx-auto '>
+    <div className=' max-w-[1200px] mx-auto px-3'>
     <div className='flex my-3 items-center justify-between'>
         <div className='text-[25px] font-bold'>Top restaurants in Kumarpara</div>
         <div className='flex '>
@@ -31,7 +32,7 @@ const TopRest = () => {
        {
          data.map(
             (d,i)=>{
-                return <Card {...d} key={i}/>
+                return <Card width="w-full md:w-[273px]"{...d} key={i}/>
             }
          )
        }
