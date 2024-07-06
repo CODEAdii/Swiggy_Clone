@@ -1,6 +1,7 @@
 import Category from "./components/Category.jsx";
 import Header from "./components/Header.jsx"
 import TopRest from "./components/TopRest.jsx";
+import OnlineDelivery from "./OnlineDelivery.jsx";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header/>
       <Category/>
       <TopRest/>
+      <OnlineDelivery/>
     </>
   )
 }

@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import { FaArrowRight,FaArrowLeft } from "react-icons/fa6";
+import OnlineDelivery from '../OnlineDelivery';
 import Card from './Card';
 
 
@@ -34,6 +35,8 @@ const TopRest = () => {
             }
          )
        }
+    </div>
+    <div>
     </div>
     </div>
   );

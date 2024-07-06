@@ -3,8 +3,8 @@ import React from 'react'
 export default function Card(props){
   return (
     <div className='w-[260px] shrink-0 grow'>
-      <div className='h-[182px] rounded-[15px] overflow-hidden relative'>
-        <img className='object-cover w-full h-full' src={"http://localhost:5000/images/"+props.image} alt="" srcset="" />
+      <div className='group h-[182px] rounded-[15px] overflow-hidden relative'>
+        <img className='group-hover:scale-110 object-cover w-full h-full' src={"http://localhost:5000/images/"+props.image} alt="" srcset="" />
         <div className='image-overlay absolute w-full h-full top-2 flex items-end p-2 text-[24px] font-bold text-[white] tracking-tighter' >
         {props.offer}
         </div>
@@ -12,8 +12,14 @@ export default function Card(props){
       <div className='mt-3 text-xl font-bold'>
                 {props.title}
       </div>
-      <div className='mt-3 text-xl font-bold '>
+      <div className=''>
                <Star className="inline"/> {props.rating}
+              <span className='ml-3'> {props.minTime} - {props.maxTime}</span>
+      </div>
+      <div>
+          {props.name}
+          <br/>
+          {props.place}
       </div>
     </div>
   )
